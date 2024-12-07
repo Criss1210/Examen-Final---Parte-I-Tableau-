@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #2c3e50;
+  background: linear-gradient(180deg, #f0f4f8, #e8eff5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Header */
+.header {
+  background: #bc1a99;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.2rem;
+}
+
+/* Content */
+.content {
+  padding: 2rem;
+}
+
+.dashboard h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #34495e;
+  margin-bottom: 1rem;
+}
+
+.image-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+.description {
+  text-align: center;
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Footer */
+.footer {
+  background: #34495e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
